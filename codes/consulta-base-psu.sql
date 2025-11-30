@@ -62,4 +62,6 @@ SELECT
     dados.VD4012 as VD4012,
     dados.VD4020 as VD4020
 FROM `basedosdados.br_ibge_pnadc.microdados` AS dados
+
 WHERE dados.ano BETWEEN 2012 AND 2019
+    AND dados.sigla_uf = 'SP'
